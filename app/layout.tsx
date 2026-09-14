@@ -1,4 +1,4 @@
-import { Analytics } from '@vercel/analytics/next'
+
 import type { Metadata, Viewport } from 'next'
 import { Playfair_Display, Inter } from 'next/font/google'
 import { Navbar } from '@/components/navbar'
@@ -71,7 +71,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <WhatsAppButton />
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+  
       </body>
     </html>
   )
